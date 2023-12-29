@@ -74,7 +74,7 @@ userSchema.methods.isPasswordCorrect = async function(password){
 
 // adding custopm methods to userSchema model
 
-userSchema.methods.genersteAccessToken = async function(next){
+userSchema.methods.generateAccessToken = async function(next){
     jwt.sign({
         _id: this._id,
         email: this.email,
