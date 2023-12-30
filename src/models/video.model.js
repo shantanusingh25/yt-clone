@@ -8,7 +8,6 @@ const videoSchema = new mongoose.Schema({
         type: String,
         required: [true , `videoFile ${message}`],
         trim: true,
-        index: true
     },
 
     thumbnail: {
